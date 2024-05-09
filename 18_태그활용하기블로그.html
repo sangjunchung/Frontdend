@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 
+  주의할점 사진이나 동영상 음악파일이 
+  100MB 이상은 깃허브에 올라가지 않음 현재는 100MB이상 사용X
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이미지 텍스트 비디오를 활용한 블로그</title>
+    <style>
+      p {
+        font-size: 20px; /* 글자 크기 조절 */
+        font-weight: 900; /* 글자 굵기 조절, 숫자로는 최대 900 */
+      }
+      body {
+        margin: 0 auto;
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 80%;
+        border: 5px solid rgba(0, 0, 0, 0.365);
+        background-color: rgb(255, 255, 255);
+      }
+      th {
+        border: 3px solid rgba(41, 1, 35, 0.67);
+        padding: 10px;
+        background-color: rgba(137, 43, 226, 0.479);
+        color: rgb(189, 52, 52);
+      }
+      td {
+        border: 4px solid rgba(21, 243, 113, 0.585);
+        padding: 5px;
+        background-color: rgba(0, 255, 255, 0.51);
+        color: rgb(85, 62, 210);
+      }
+      img {
+        width: 400px;
+        height: 275px;
+      }
+      video {
+        width: 800px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>😀 즐거운 나라 😀</h1>
+    <img src="이미지들/pig.jpg" />
+    <p>해찬 ฅʕ ๑• Ⱉ • ⠕ʔ</p>
+    <video autoplay muted loop>
+      <source src="비디오들/해돋이.mp4" type="video/mp4" />
+    </video>
+    <p>제 블로그에 오신 것을 환영합니다.</p>
+    <table>
+      <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>방문일</th>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>홍길동</td>
+        <td>2024-05-09</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>박철수</td>
+        <td>2024-05-08</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>강영희</td>
+        <td>2024-05-07</td>
+      </tr>
+    </table>
+  </body>
+
+  <foot>
+    <!--&copy; © 를 나타내는 문자 엔터티-->
+    &copy; 2024 간단한 블로그 All rights reserved. <br />환상의 나라 주식회사
+  </foot>
+</html>
