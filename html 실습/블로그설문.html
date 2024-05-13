@@ -29,6 +29,7 @@
         border-radius: 5px;
         width: 95%;
         padding: 10px;
+        outline: none;
       }
       p {
         text-align: left;
@@ -42,19 +43,19 @@
       <h1>블로그 설문조사</h1>
       <form>
           <label>
-           <p>이름:</p><input type="text" placeholder="이름을 입력해주세요." />
+           <p>이름:</p><input type="text" placeholder="이름을 입력해주세요." required />
           </label>
           <br>
           <label>
-           <p>이메일:</p><input type="email" placeholder="이메일을 입력해주세요." />
+           <p>이메일:</p><input type="email" placeholder="이메일을 입력해주세요." required />
           </label>
           <br>
           <label>
-            <p>나이:</p><input type="number" placeholder="나이를 입력해주세요." />
+            <p>나이:</p><input type="number" placeholder="나이를 입력해주세요." required />
           </label>
           <br>
           <label>
-            <p>의견:</p><input type="text" placeholder="의견을 입력해주세요." />
+            <p>의견:</p><input type="text" placeholder="의견을 입력해주세요." required />
           </label>
           <br><br>
         <button type="submit">제출</button>
