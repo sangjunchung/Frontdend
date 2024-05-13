@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>input실습</title>
+    <style>
+        input {
+            outline: none;
+        }
+        .foodtopping {
+            padding-left: 20px;
+        }
+        .comment {
+            outline: none;
+            border: none;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+        <form>
+            <label><p>고객명 : <input name="clientName" type="text" placeholder="이름을 입력해주세요" required></p></label>
+            <label><p>전화번호 : <input name="clientPhone" type="number" placeholder="전화번호를 입력해주세요" required></p></label>
+            <label><p>Email : <input name="clientEmail" type="email" placeholder="이메일을 입력해주세요" required></p></label>
+            
+            <p><input type="radio" name="size" value="Small"  required>Small</p>
+            <p><input type="radio" name="size" value="Medium" >Medium</p>
+            <p><input type="radio" name="size" value="Large" >Large</p>
+            <div class="foodtopping">
+            <p><input type="checkbox" name="topping" value="베이컨">베이컨</p>
+            <p><input type="checkbox" name="topping" value="치즈">치즈</p>
+            <p><input type="checkbox" name="topping" value="양파">양파</p>
+            <p><input type="checkbox" name="topping" value="버섯">버섯</p>
+            </div>
+            <br>
+            <label>희망배송시간 : <input type="time" name="wishTime"></label>
+            <br><br><br>
+            <label>배송시 요청사항 : <input class="comment" type="text"></label>
+            <br><br>
+            <button type="submit">주문하기</button>
+        </form>
+    </div>
+  </body>
+</html>
