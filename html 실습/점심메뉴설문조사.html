@@ -21,11 +21,15 @@
       }
       button {
         background-color: yellowgreen;
-        color: rgb(20, 20, 143);
+        color: white;
         border: none;
         border-radius: 3px;
         display: block;
         margin: 0 auto;
+      }
+      .음료꾸미기 {
+        width: 100px;
+        height: 100px;
       }
     </style>
   </head>
@@ -36,15 +40,19 @@
 
       <form>
         <div class="피자종류">
-          <label for="고르곤졸라">
-            피자 선택 : 
-            <input id="고르곤졸라" type="checkbox" />
-            <img src="../이미지들/고르곤졸라.png" />
-          </label>
-          <label for="페퍼로니">
-            <input id="페퍼로니" type="checkbox" />
-            <img src="../이미지들/페퍼로니.png" />
-          </label>
+          <span>
+            <label for="고르곤졸라">
+              피자 선택 :
+              <input id="고르곤졸라" type="checkbox" />고르곤졸라
+              <img src="../이미지들/고르곤졸라.png" />
+            </label>
+          </span>
+          <span>
+            <label for="페퍼로니">
+              <input id="페퍼로니" type="checkbox" />페퍼로니
+              <img src="../이미지들/페퍼로니.png" />
+            </label>
+          </span>
         </div>
         <div class="토핑">
           <label>토핑 선택 : </label>
@@ -65,8 +73,10 @@
         <div class="음료">
           <label>음료수 선택 : </label>
           <input type="checkbox" name="음료수선택" />콜라
+          <img class="음료꾸미기" src="../이미지들/콜라.png" />
           <input type="checkbox" name="음료수선택" />사이다
           <input type="checkbox" name="음료수선택" />맥주
+          <img class="음료꾸미기" src="../이미지들/맥주.png" />
         </div>
         <div class="주소">
           <label>배달 주소</label>
@@ -75,9 +85,10 @@
           <br />
           <small>도서/산간 지역은 배달비 3000원 부과됩니다.</small>
         </div>
-        <br>
+        <br />
         <button>주문하기</button>
       </form>
+      <a href="홈페이지메인.html">메인으로 돌아가기</a>
     </div>
   </body>
 </html>
