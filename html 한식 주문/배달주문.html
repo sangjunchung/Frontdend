@@ -3,50 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <title>배달 주문</title>
+    <link rel="stylesheet" href="스타일.css" />
     <style>
-        body {
-            background-color: #f9f9f9;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #8d8d8d;
-            padding: 10px;
-        }
-        h1 {
-            text-align: center;
-        }
-        input {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            outline: none;
-        }
-        .info, form {
-            margin: 10px;
-            padding: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #8d8d8d;
-            border: none;
-            border-radius: 10px;
-            color: white;
-            width: 100px;
-            margin: 0 auto;
-            display: block;
-        }
+      input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+      .info,
+      form {
+        margin: 10px;
+        padding: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #8d8d8d;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        width: 100px;
+        margin: 0 auto;
+        display: block;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container">
+    <div class="배달주문">
       <h1>배달주문하기</h1>
       <form>
         <div class="info">
           <label>주문번호</label>
-          <input type="number" required readonly value="1" hidden/>
+          <input type="number" required readonly value="1" hidden />
         </div>
         <div class="info">
           <label>사용자이름:</label>
