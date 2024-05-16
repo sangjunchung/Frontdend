@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>실습 5-2</title>
+    <title>실슬문제1</title>
     <style>
       textarea {
         resize: none;
@@ -26,7 +26,7 @@
     <div class="form">
       <table>
         <tr>
-          <th>ID</th>
+          <th><label>ID</label></th>
           <td>
             <input
               name="userId"
@@ -38,7 +38,7 @@
           </td>
         </tr>
         <tr>
-          <th>비밀번호</th>
+          <th><label>비밀번호</label></th>
           <td>
             <input
               class="pwform"
@@ -50,13 +50,13 @@
           </td>
         </tr>
         <tr>
-          <th>비밀번호 확인</th>
+          <th><label>비밀번호 확인</label></th>
           <td>
             <input class="pwform" name="userPw2" type="password" required />
           </td>
         </tr>
         <tr>
-          <th>Email</th>
+          <th><label>Email</label></th>
           <td>
             <input name="userEmail" type="email" required />
             <select>
@@ -69,16 +69,16 @@
         </tr>
       </table>
       <p>
-        성별 :
+        <label>성별 :</label>
         <input name="gender" type="radio" value="성별" required /> 남성
         <input name="gender" type="radio" value="성별" /> 여성
       </p>
       <p>
-        생년월일 :
+        <label>생년월일 :</label>
         <input name="birthday" type="date" required />
       </p>
       <p>
-        취미<br />
+        <label>취미</label><br />
         <input name="hobby" type="checkbox" value="취미" />야구 &nbsp;
         <input name="hobby" type="checkbox" value="취미" />농구 &nbsp;
         <input name="hobby" type="checkbox" value="취미" />축구 <br />
@@ -87,7 +87,7 @@
       </p>
       <br />
       <p>
-        자기소개<br />
+        <label>자기소개</label><br />
         <textarea name="intro" rows="10" cols="80"></textarea>
       </p>
     </div>
