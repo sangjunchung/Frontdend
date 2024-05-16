@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>폰트 .css 분리 후 적용하기</title>
+    <link rel="stylesheet" href="스타일 폴더/01_CSS실습1.css" />
+    <style>
+      @font-face {
+        font-family: "YClover-Bold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-style: normal;
+      }
+      /* 
+        폰트를 모든 태그에 적용하길 원한다면 * 작성해주거나
+        body 내에 모든 태그에 적용하길 원한다면 body 에 작성
+      */
+      * {
+        font-family: "YClover-Bold";
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>안녕하세요.</h1>
+    <h2 class="환영꾸미기">환영합니다.</h2>
+    <p>어서오세요.</p>
+    <pre>
+        css란 눈에서 보이는 각종 양식을 꾸며주는 언어
+    </pre>
+  </body>
+</html>

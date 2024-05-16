@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "YClover-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "YClover-Bold";
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  /* 
+    background-color : 단색
+    background-color : 배경에 이미지를 삽입하는데 사용
+                       이미지 경로, 그라데이션 등 사용
+                       경로 -> background-image : url('이미지.이미지확장자');
+                       그라데이션 -> background-image : linear-gradient(방향, 색상1, 색상2, 등);
+                                                        radial-gradient(중심위치, 원모양크기, 색상1, 색상2, 등);
+  */
+  background-image: linear-gradient(to left, #ff0080, #ffff80);
+}
+.네비게이션 {
+  background-image: radial-gradient(circle, #eeaeca, #94bbe9);
+  text-align: center;
+}
+/*
+    html 코딩 안에 있는 모든 a 태그의 스타일이 변경되지 않길 원할 때
+    특정 영역 안에 있는 a 태그만 변경 요청을 진행할 수 있음
+    .클래스명 태그명 {}
+
+    클래스명이 존재하지 않을 경우
+    태그명 태그명 {}
+*/
+.네비게이션 a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline;
+}
+.특징 {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #8d8d8d;
+}
+.footer {
+    background-color: #94bbe9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
