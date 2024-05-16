@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>두번째 블로그</title>
+    <style>
+      body {
+        margin: 0 auto;
+        text-align: center; /* 속성 내부에서 글자를 가운데 정렬 */
+        background-color: rgba(127, 255, 212, 0.5);
+      }
+      .container {
+        margin: 0 auto; /* 상하=0 좌우=auto 여백을 설정 */
+        width: 70%;
+        padding: 20px;
+        background-color: rgba(128, 128, 128, 0.3);
+        box-shadow: 0 0 50px white;
+      }
+      .videoform {
+        width: 90%;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+      }
+      .imgform {
+        width: 70%;
+        border-radius: 30%; /* 30% 사각형 각 100%를 기준으로 30% 만 각을 부드럽게 만든다는 의미*/
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>두번째 블로그</h1>
+      <h2>첫번째 포스트 : 비디오 추가하기</h2>
+      <p>면 한 사발 드시죠!!!! 여름에는 저희 블로그와 함께해요.&#128513;</p>
+      <video class="videoform" autoplay muted loop>
+        <source src="../비디오들/밤하늘.mp4" type="video/mp4" />
+      </video>
+      <br />
+      <h2>두번째 포스트 : 이미지 추가하기</h2>
+      <p>이 포스트에는 이미지가 포함되어 있습니다.&#128586;</p>
+      <img
+        class="imgform"
+        src="../이미지들/swimmingPartyMarley.jpg"
+        alt="수영장 말리"
+      />
+      <br />
+      <div class="commnets">
+        <h2>모든 댓글</h2>
+        <div class="comment">
+          <p>사용자1 :</p>
+          <p>이 블로그 정말 멋져요~!</p>
+        </div>
+        <div class="comment">
+          <p>사용자2 :</p>
+          <p>이미지가 너무 귀엽네요.</p>
+        </div>
+        <div class="comment">
+          <input type="text" placeholder="이름을 입력하세요" />
+          <input type="text" placeholder="내용을 입력하세요" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

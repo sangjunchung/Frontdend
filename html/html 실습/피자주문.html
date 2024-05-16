@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>피자 주문하기</title>
+    <style>
+      img {
+        width: 200px;
+      }
+      body {
+        background-color: #f9f9f9;
+      }
+      .container {
+        width: 70%;
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        background-color: yellowgreen;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        display: block;
+        margin: 0 auto;
+      }
+      .음료꾸미기 {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>피자 주문하기</h1>
+
+      <form>
+        <div class="피자종류">
+          <span>
+            <label for="고르곤졸라">
+              피자 선택 :
+              <input id="고르곤졸라" type="checkbox" />고르곤졸라
+              <img src="../이미지들/고르곤졸라.png" />
+            </label>
+          </span>
+          <span>
+            <label for="페퍼로니">
+              <input id="페퍼로니" type="checkbox" />페퍼로니
+              <img src="../이미지들/페퍼로니.png" />
+            </label>
+          </span>
+        </div>
+        <div class="토핑">
+          <label>토핑 선택 : </label>
+          <select name="토핑">
+            <option>기본</option>
+            <option>페퍼로니</option>
+            <option>야채</option>
+            <option>치즈</option>
+            <option>햄</option>
+          </select>
+        </div>
+        <div class="크기">
+          <label>크기 선택 : </label>
+          <input type="radio" name="피자크기" />Small
+          <input type="radio" name="피자크기" />Medium
+          <input type="radio" name="피자크기" />Large
+        </div>
+        <div class="음료">
+          <label>음료수 선택 : </label>
+          <input type="checkbox" name="음료수선택" />콜라
+          <img class="음료꾸미기" src="../이미지들/콜라.png" />
+          <input type="checkbox" name="음료수선택" />사이다
+          <input type="checkbox" name="음료수선택" />맥주
+          <img class="음료꾸미기" src="../이미지들/맥주.png" />
+        </div>
+        <div class="주소">
+          <label>배달 주소</label>
+          <br />
+          <textarea rows="3" cols="40" style="resize: none"></textarea>
+          <br />
+          <small>도서/산간 지역은 배달비 3000원 부과됩니다.</small>
+        </div>
+        <br />
+        <button>주문하기</button>
+      </form>
+      <a href="홈페이지메인.html">메인으로 돌아가기</a>
+    </div>
+  </body>
+</html>

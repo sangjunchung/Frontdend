@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>게시판</title>
+    <style>
+      .main-img {
+        width: 30%;
+      }
+      body {
+        margin: 0 auto;
+        text-align: center;
+      }
+      ul li {
+        display: inline;
+      }
+      .main-video {
+        width: 70%;
+      }
+      pre {
+        color: yellowgreen;
+      }
+      a {
+        text-decoration: none; /* 링크 밑줄 제거 */
+        color: rgb(0, 128, 255);
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>A 태그로 이동하는 이미지 &#128512;</h3>
+    <pre>
+        페이지 내부에서 점프하기
+        페이지 내부에서 소비자나 개발자가 원하는 위치로 이동할 수 있음
+
+        a 태그 이외에 다른 태그들에는 id 속성을 이용해서 변수명을 지정
+        a 태그에서 href 안에 #변수명을 작성해주면 내가 원하는 태그 위치로 이동할 수 있음
+    </pre>
+    <ul>
+      <li><a href="#이미지1">1번 이미지</a></li>
+      <li><a href="#이미지2">2번 이미지</a></li>
+      <li><a href="#이미지3">3번 이미지</a></li>
+      <br>
+      <li><a href="#비디오1">1번 비디오</a></li>
+    </ul>
+
+    <h3>1번 이미지</h3>
+    <img src="../이미지들/healing.jpg" id="이미지1" class="main-img" />
+
+    <h3>2번 이미지</h3>
+    <img src="../이미지들/hogam.jpg" id="이미지2" class="main-img" />
+
+    <h3>3번 이미지</h3>
+    <img
+      src="../이미지들/marley.jpg"
+      alt="말리"
+      id="이미지3"
+      class="main-img"
+    />
+
+    <h3>1번 비디오</h3>
+    <video class="main-video" id="비디오1" autoplay muted loop>
+      <source src="../비디오들/해돋이.mp4" />
+    </video>
+    <br />
+    <a href="23_입력관련실습태그.html" target="_blank">
+      <img class="icon" src="../html 실습/메인ㄱㄱ.png">
+    </a>
+  </body>
+</html>
