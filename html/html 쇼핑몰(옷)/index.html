@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KH 쇼핑몰</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .productImg img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>KH 쇼핑몰</h1>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">제품</a></li>
+          <li><a href="#">장바구니</a></li>
+          <li><a href="#">로그인</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="productImg">
+          <img src="이미지/상의.png" alt="제품이미지" />
+          <h2>엘레강스 셔츠</h2>
+          <p>
+            상품 설명 : 독특한 텍스처와 조직감이 매력적인 텍스처 오픈 카라
+            셔츠입니다.<br />
+            여유 있는 릴렉스 핏에 어깨선이 드롭된 실루엣으로 다양한 스타일에
+            매치하기 좋은 아이템입니다.
+          </p>
+          <p>$ 9,000</p>
+          <a href="셔츠3.html">상세보기</a>
+          <br><br>
+          <button onclick="버튼클릭()">장바구니에 추가</button>
+        </div>
+        <div class="productImg">
+          <img src="이미지/여름상의.png" alt="제품이미지" />
+          <h2>하와이안 포켓 셔츠</h2>
+          <p>
+            쾌적한 착용감의 릴렉스 하와이안 셔츠입니다.<br />
+            베이직한 디자인과 여유있는 핏으로 여름철 다양한 룩에 매치하기
+            좋습니다.<br />
+            포켓은 내부 포켓으로 시크릿한 느낌을 제공합니다.
+          </p>
+          <p>
+            지금 할인가 : $ 600
+            <s style="color: red"><small>$ 12,000</small></s>
+          </p>
+          <a href="셔츠4.html">상세보기</a>
+          <br><br>
+          <button onclick="버튼클릭()">장바구니에 추가</button>
+        </div>
+        <div class="productImg">
+          <img src="이미지/바지.png" alt="제품 이미지" />
+          <h2>청반바지</h2>
+          <p>흔한 소재의 청색 반바지이다.</p>
+          <p>$ 70</p>
+          <a href="팬츠3.html">상세보기</a>
+          <br><br>
+          <button onclick="버튼클릭()">장바구니에 추가</button>
+        </div>
+        <div class="productImg">
+          <img src="이미지/긴바지.png" alt="제품 이미지" />
+          <h2>검흰바지</h2>
+          <p>
+            검은색과 흰색이 눈이 어지럽게 조합된 바지이다.<br />
+            <small style="color: red">
+              <s>주의! 너무 오래 쳐다보면 눈이 아플수 있음</s>
+            </small>
+          </p>
+          <p>
+            지금 할인가 : $ 100 <s style="color: red"><small>$ 400</small></s>
+          </p>
+          <a href="팬츠4.html">상세보기</a>
+          <br><br>
+          <button onclick="버튼클릭()">장바구니에 추가</button>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2024 쇼핑몰</p>
+      </div>
+    </div>
+    <script>
+      /*
+        스크립트 주석
+        장바구니 추가 버튼 클릭할 경우 알림창을 띄우는 함수
+        자바에서는 메서드를 작성할 때
+        public void 버튼클릭(){
+            System.out.println("버튼이 클릭됐습니다.");
+        }
+        자바스크립트에서는
+        function 버튼클릭(){
+            alert("상품이 추가되었습니다.");
+        }
+      */
+      function 버튼클릭() {
+        alert("상품이 장바구니에 추가되었습니다.");
+      }
+    </script>
+  </body>
+</html>

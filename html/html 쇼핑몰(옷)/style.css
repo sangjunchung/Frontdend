@@ -1,0 +1,75 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cfcfcf;
+  margin: 0;
+}
+.header {
+  background-color: rgba(255, 99, 71, 0.7);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.footer {
+  background-color: rgba(255, 99, 71, 0.7);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.navigation {
+  background-color: rgb(170, 255, 225);
+  margin-top: -5px; /* 위 여백 간격 조정 - 는 줄어듬*/
+  border-radius: 5px;
+  text-align: center;
+}
+.navigation ul {
+  list-style: none;
+}
+.navigation li {
+  display: inline;
+  margin-right: 20px;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(245, 70, 250);
+  font-size: 20px;
+}
+.main {
+  padding: 20px;
+  display: flex;
+}
+.productImg {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px; /* 태그 아래로 공백이 필요할 때 작성 */
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(60, 60, 60);
+}
+.productImg img {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+/* 마우스를 버튼 위에 올리기 전 모습 */
+.productImg button {
+  background-color: #4bcffa;
+  color: rgb(195, 40, 40);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  /* 버튼 위에 마우스를 올렸을 때 마우스 아이콘 변경 */
+  cursor: pointer;
+}
+/* 마우스를 버튼 위에 올리 후 모습 */
+.productImg button:hover {
+  background-color: black;
+  color: white;
+}
+.productImg a {
+    text-decoration: none;
+    color: blue;
+}
