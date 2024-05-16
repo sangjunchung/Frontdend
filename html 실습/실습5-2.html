@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>실습 5-2</title>
+    <style>
+      textarea {
+        resize: none;
+        outline: none;
+      }
+      input {
+        outline: none;
+      }
+      .form {
+        margin-left: 15px;
+      }
+      .pwform {
+        width: 228px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>회원 가입</h1>
+    <br />
+    <div class="form">
+      <table>
+        <tr>
+          <th>ID</th>
+          <td>
+            <input
+              name="userId"
+              type="text"
+              placeholder="아이디 10글자 이내"
+              required
+            />
+            <button>중복 확인</button>
+          </td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td>
+            <input
+              class="pwform"
+              name="userPw1"
+              type="password"
+              placeholder="영문,숫자,특수문자 포함 8자 이상"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>비밀번호 확인</th>
+          <td>
+            <input class="pwform" name="userPw2" type="password" required />
+          </td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>
+            <input name="userEmail" type="email" required />
+            <select>
+              <option>직접입력</option>
+              <option>naver.com</option>
+              <option>google.com</option>
+              <option>daum.net</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <p>
+        성별 :
+        <input name="gender" type="radio" value="성별" required /> 남성
+        <input name="gender" type="radio" value="성별" /> 여성
+      </p>
+      <p>
+        생년월일 :
+        <input name="birthday" type="date" required />
+      </p>
+      <p>
+        취미<br />
+        <input name="hobby" type="checkbox" value="취미" />야구 &nbsp;
+        <input name="hobby" type="checkbox" value="취미" />농구 &nbsp;
+        <input name="hobby" type="checkbox" value="취미" />축구 <br />
+        <input name="hobby" type="checkbox" value="취미" />공부 &nbsp;
+        <input name="hobby" type="checkbox" value="취미" />음악감상
+      </p>
+      <br />
+      <p>
+        자기소개<br />
+        <textarea name="intro" rows="10" cols="80"></textarea>
+      </p>
+    </div>
+    <br />
+    <button>회원가입</button>
+    <button>다시입력</button>
+  </body>
+</html>
