@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레이아웃 스타일</title>
+  </head>
+
+  <body>
+    <h1>태그의 여백 관련 스타일</h1>
+    <pre>
+        1. padding
+            내용과 선 사이의 공간
+        2. border 테두리
+            영역이 어디까지 영역인지 구분하기 위한 선
+        3. margin 여백 간격
+            다른 태그와 간격을 나타내는 영역
+    </pre>
+    <hr>
+
+    <h3>border(테두리) 영역</h3>
+    <style>
+        .박스 {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        .보더 {
+            border: 1px solid black; /* 선의 두께, 선의 종류, 선의 색깔 */
+            /* 
+                선의 종류
+                none : 테두리 표시 X
+                dotted : 테두리를 둥근 점으로 여러개 그림, 간격 지정 X
+                dashed : 테두리를 직사각형으로 여러개 그림, 간격 지정 X
+                solid : 테두리를 하나의 직선으로 그림
+                doulbe : 테두리를 두 개의 평행한 직선으로 그림
+                groove : 테두리가 파인 것 처럼 그려짐
+                ridge : 테두리가 튀어나온 것 처럼 그려짐
+                inset : 태그의 배경이 파인 것 처럼 그려짐
+                outset : 태그의 배경이 튀어나온 것 처럼 그려짐
+            */
+        }
+        .패딩 {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px solid black;
+        }
+        .마진 {
+            /* 상 하 좌 우 20px 만큼 다른 태그와 간격 설정 */
+            margin: 20px;
+        }
+    </style>
+    <div class="보더">내용</div>
+    <div class="박스 패딩">내용</div>
+    <div class="박스 마진">마진 내용</div>
+
+    <h3>padding margin border 방향성</h3>
+    <pre>
+        000 - padding, margin, border 를 나타냄
+
+        000-top : 크기 -> 위쪽 방향 크기 지정
+        000-bottom : 크기 -> 아래쪽 방향 크기 지정
+        000-left : 크기 -> 왼쪽 방향 크기 지정
+        000-right : 크기 -> 오른쪽 방향 크기 지정
+
+        단 border(선) 속성값은 [크기 모양 색상] 형식
+        ex) 오른쪽 선은 도트 모양, 10px 빨간색
+            -> border-right: 10px dotted red;
+    </pre>
+    <h3><mark>padding, margin,</mark> border-width 크기 한 번에 지정하기</h3>
+    <pre>
+        padding | margin | border-width : 속성 값 크기 설정
+        속성 값 1개 : 상하좌우
+        속성 값 2개 : 상하, 좌우
+        속성 값 3개 : 상, 좌우, 하 
+        속성 값 4개 : 상, 우, 하, 좌 순으로(시계방향) 크기 설정
+    </pre>
+
+    <h3> margin : 0 auto;</h3>
+    <pre>
+        auto : 다른 태그와의 간격을 자동으로 지정해서 가운데 정렬하게 만드는 속성 값
+
+        기본적으로 자동으로 정렬할 때 사용(=가운데 정렬)
+        display : block 일 경우 자주 사용
+
+        inline, inline-block 은 text-align : center; 이용
+    </pre>
+  </body>
+</html>

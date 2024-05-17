@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>레이아웃 실습</title>
+  </head>
+
+  <body>
+    <h1>레이아웃 실습 예제</h1>
+    <h2>block 형식 요소를 inline 형식으로 변경</h2>
+    <style>
+        .block {
+            border: 3px dashed blue;
+            display: inline;
+            width: 150px;
+            height: 150px;
+        }
+        .area1 {
+            background-color: lightcoral;
+        }
+        .area2 {
+            background-color: lightseagreen;
+            color: white;
+        }
+        .area3 {
+            background-color: lightgoldenrodyellow;
+        }
+        .area4 {
+            background-color: lightsteelblue;
+        }
+        .area5 {
+            background-color: lightgray;
+        }
+        .area6 {
+            background-color: lightpink;
+        }
+        .inblock {
+            display: inline-block;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .none {
+            display: none;
+        }
+    </style>
+    <div class="block area1">1번 영역</div>
+    <div class="block area2">2번 영역</div>
+
+    <h2>inline-block, none 확인하기</h2>
+    <div class="area1 block inblock">1번 영역</div>
+    <div class="area2 block inblock">2번 영역</div>
+    <div class="area3 block inblock hidden">3번 영역</div>
+    <div class="area4 block inblock">4번 영역</div>
+    <div class="area5 block inblock none">5번 영역</div>
+    <div class="area6 block inblock">6번 영역</div>
+    <hr>
+
+    <h2>화면 영역 분할</h2>
+    <h3>상하로 2분할 하기</h3>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+        }
+        .container > div:nth-child(1) {
+            height: 50%;
+            background-color: lightblue;
+        }
+        .container > div:nth-child(2) {
+            height: 50%;
+            background-color: lightgreen;
+        }
+    </style>
+    <div class="container">
+        <div></div>
+        <div></div>
+    </div>
+
+    <h3>상하로 3분할 하기</h3>
+    <style>
+        #tbthree > div:nth-child(1) {
+            height: 25%;
+            background-color: tomato;
+        }
+        #tbthree > div:nth-child(2) {
+            height: 25%;
+            background-color: khaki;
+        }
+
+        /* 
+            nth-child 특정한 순서에 있는 태그를 선택할 때 사용
+            nth-child : n 번째 자식
+        */
+
+        #tbthree > div:nth-child(3) {
+            height: 50%;
+            background-color: aquamarine;
+        }
+    </style>
+    <div class="container" id="tbthree">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <h3>좌우로 2분할 하기</h3>
+    <style>
+        #lftwo > div:nth-child(1) {
+            width: 50%;
+            height: 100%;
+            background-color: lightseagreen;
+            float: right;   
+        }
+        #lftwo > div:nth-child(2) {
+            width: 50%;
+            height: 100%;
+            background-color: lightpink;
+        }
+    </style>
+    <div class="container" id="lftwo">
+        <div></div>
+        <div></div>
+    </div>
+
+    <h3>좌우로 3분할 하기</h3>
+    <style>
+        #lfthree > div:nth-child(1) {
+            width: 33%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+            display: inline-flex;
+        }
+        #lfthree > div:nth-child(2) {
+            width: 34%;
+            height: 100%;
+            background-color: lightsalmon;
+            display: inline-flex;
+        }
+        #lfthree > div:nth-child(3) {
+            width: 33%;
+            height: 100%;
+            background-color: lightslategrey;
+            display: inline-flex;
+        }
+    </style>
+    <div class="container" id="lfthree">
+        <div></div><div></div><div></div>
+    </div>
+  </body>
+</html>
