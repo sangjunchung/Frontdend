@@ -95,6 +95,26 @@
         text-shadow: 0px 0px 15px white;
         /* box-shadow: 0 0 15px white; 여기서는 테두리가 없기 때문에 사용 불가 */
       }
+      .fixedArea {
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        border-radius: 50%;
+        bottom: 30px;
+        right: 30px;
+        position: fixed;
+        background-color: white;
+      }
+      .fixedArea a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        line-height: 40px;
+        color: black;
+        font-weight: bold;
+      }
     </style>
   </head>
 
@@ -151,6 +171,9 @@
         </div>
       </section>
     </main>
+    <div class="fixedArea">
+      <a href="#">TOP</a>
+    </div>
     <footer>
       <p>&copy; 2024 KH쇼핑몰. All rights reserved.</p>
     </footer>
