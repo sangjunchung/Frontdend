@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>문의하기</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        main {
+            width: 90%;
+            box-shadow: 0 0 10px #9c9c9c;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+        .fixedArea {
+            background-color: rgb(81, 81, 81);
+            bottom: 20px;
+            right: 20px;
+        }
+        .fixedArea a {
+            color: white;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>문의하기</h1>
+    </header>
+    <nav>
+      <a href="회사소개.html #회사소개">회사소개</a>
+      <a href="회사소개.html #팀소개">팀소개</a>
+      <a href="#">문의하기</a>
+    </nav>
+    <main>
+      <form>
+        <h2>문의사항을 남겨주세요</h2>
+        <p><strong>문의 분류</strong></p>
+        <div>
+          <select>
+            <option>선택해주세요</option>
+            <option value="제품">제품관련</option>
+            <option value="배송">배송관련</option>
+            <option value="환불">환불관련</option>
+            <option value="기타">기타관련</option>
+          </select>
+        </div>
+        <p><strong>이름</strong></p>
+        <input type="text" name="inName" required>
+        <p><strong>이메일</strong></p>
+        <input type="email" name="inEmail" required>
+        <p><strong>메시지</strong></p>
+        <textarea rows="10"></textarea>
+        <button>보내기</button>
+      </form>
+    </main>
+    <div class="fixedArea">
+        <a href="tel:+821012345678">&#9742;</a>
+      </div>
+    <footer>
+        <p>&copy; 2024 KH쇼핑몰. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

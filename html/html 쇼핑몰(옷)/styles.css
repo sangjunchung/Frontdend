@@ -109,3 +109,34 @@ main {
   color: black;
   font-weight: bold;
 }
+
+/* ***** 문의하기 ***** */
+h2 {
+    text-align: center;
+}
+select,
+input {
+    width: 98%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+}
+textarea {
+    width: 98%;
+    outline: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 3px;
+    resize: none;
+    margin-bottom: 20px;
+}
+button {
+    width: 98%;
+    background-color: rgb(81, 81, 81);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
