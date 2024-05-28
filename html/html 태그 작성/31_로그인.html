@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>로그인하기</title>
+    <script src="../../../javascript/jQuery/jquery3.7.1.js"></script>
+  </head>
+
+  <body>
+    <form id="loginForm" action="31_로그인결과.html" method="get">
+      <label>아이디 : </label>
+      <input type="text" id="loginId" />
+      <br />
+      <label>비밀번호 : </label>
+      <input type="password" id="loginPw" />
+      <button type="submit" onclick="로그인버튼(event)">로그인하기</button>
+    </form>
+  </body>
+  <script>
+    function 로그인버튼(event) {
+        const loginId = $("#loginId").val();
+        const loginPw = $("#loginPw").val();
+        
+        // localStorage 에서 저장된 회원가입 정보 가져오기
+        const savedId = localStorage.getItem('signId');
+        const savedPw = localStorage.getItem('signPw');
+
+        //window.location.href = '31_로그인결과.html';
+
+        if(loginId !== savedId){
+            alert("일치하는 아이디가 없습니다.");
+            event.preventDefault(); // form 이동 막아버림
+        } else {
+            if(loginPw !== savedPw){
+                alert("비밀번호가 일치하지 않습니다.");
+                event.preventDefault();
+            }
+        }
+    }
+  </script>
+</html>
