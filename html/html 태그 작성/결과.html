@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>폼 결과</title>
+    <script src="../../../javascript/jQuery/jquery3.7.1.js"></script>
+  </head>
+
+  <body>
+    <h1>폼 결과</h1>
+    <p>이름 : <span id="resultname"></span></p>
+    <script>
+      $(document).ready(function () {
+        const urlName = new URLSearchParams(window.location.search);
+        const name = urlName.get('inName');
+        $("#resultname").text(name);
+      });
+    </script>
+  </body>
+</html>
