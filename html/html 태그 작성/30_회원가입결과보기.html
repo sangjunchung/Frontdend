@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입 결과</title>
+    <script src="../../../javascript/jQuery/jquery3.7.1.js"></script>
+  </head>
+
+  <body>
+    <h1>회원가입 완료되신 것을 환영합니다.</h1>
+    <p>이름 : <span id="resultName"></span></p>
+    <p>나이 : <span id="resultAge"></span></p>
+    <p>아이디 : <span id="resultId"></span></p>
+  </body>
+  <script>
+    $(document).ready(function () {
+      /*
+      file:///C:/Users/user1/frontend-workspace/css-html/html/html 태그작성/30_회원가입 결과보기.html
+      ?signName=%ED%99%8D%EA%B8%B8%EB%8F%99&signAge=40&signId=honghong99
+      */
+      const urlName = new URLSearchParams(window.location.search).get(
+        "signName"
+      );
+      const urlAge = new URLSearchParams(window.location.search).get("signAge");
+      const urlId = new URLSearchParams(window.location.search).get("signId");
+
+      $("#resultName").text(urlName);
+      $("#resultAge").text(urlAge);
+      $("#resultId").text(urlId);
+    });
+  </script>
+</html>
